@@ -1,6 +1,14 @@
-var numbersort = function(alert("reached numberSort")) {
-
+function numberSort(oneYes, zeroYes, divThree) {
+  if ((numberCompare(countTo, countBy) === true) || (noZero(countTo, countBy) === true) || (noBlanks(countTo, countBy) === true) || (notNum(countTo, countBy) === true)) {
+    alert("try again");
+  } else {
+    for(var i = countBy; i <= countTo; i += countBy) {
+      displayResults(i);
+    }
+  }
 }
+
+
 
 // put at bottom. from count to project
 // button/page load code
@@ -16,8 +24,8 @@ $(document).ready(function() {
       var divThree = makeInt%3 === 0 ;  // is int divisible by 3?
       // console log here for oneYes zeroYes and divThree all work
       // var numberSort(splitNumber); // spits number into top function
+      numberSort(oneYes, zeroYes, divThree);
 
-      
 
 
   });
