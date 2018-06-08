@@ -1,3 +1,7 @@
-#countUp, #submit, #reset, ul {
+#countUp, #submit, #reset, #output ul {
   margin-top: 20px;
+}
+
+#output {
+  visibility: hidden;
 }
