@@ -1,19 +1,6 @@
+var numbersort = function(alert("reached numberSort")) {
 
-
-// var numberSort = function(splitNumber) {
-//    if (oneYes === true) {
-//      return (alert("beep"));
-//      }
-//  }
-//
-
-
-
-
-
-
-
-
+}
 
 // put at bottom. from count to project
 // button/page load code
@@ -27,9 +14,11 @@ $(document).ready(function() {
       var zeroYes = splitNumber.includes("0"); // check for 0
       var makeInt = parseInt($("#inputString").val()); // brings in string value as integer
       var divThree = makeInt%3 === 0 ;  // is int divisible by 3?
+      // console log here for oneYes zeroYes and divThree all work
+      // var numberSort(splitNumber); // spits number into top function
 
-      console.log(oneYes);
-      //numberSort(splitNumber); // spits number into top function
+      
+
 
   });
 
