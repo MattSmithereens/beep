@@ -1,4 +1,4 @@
-# Beep Boop
+# To Beep or not to Beep?
 
 #### Epicodus Intro to Programming: Weekly Independent Project
 Friday June 8th, 2018
