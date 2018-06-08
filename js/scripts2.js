@@ -10,11 +10,16 @@ function oneCheck(i) {
   var splitNumber = stringI.split("");
   var oneYes = splitNumber.includes("1");
   var zeroYes = splitNumber.includes("0");
-
-  for (oneYes === "true") {
-    console.log("reached");
+  if (oneYes === true) {
+    displayResults("BOOP");
+  } else if (zeroYes === true) {
+    displayResults("BEEP");
+  }else {
+    displayResults(i);
   }
+}
 
+//  displayResults(oneYes);
 
   //} else {
 
@@ -22,7 +27,7 @@ function oneCheck(i) {
   //   var makeInt = parseInt($("#inputString").val()); // brings in string value as integer
   //   var divThree = makeInt%3 === 0 ;  // is int divisible by 3?
   //}
-}
+
 
 
 
