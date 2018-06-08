@@ -5,20 +5,21 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts2.js"></script>
   <title>Beep! Boop!</title>
 </head>
 <body>
   <div class="container">
     <h1>To Beep or Not to Beep</h1>
     <form id="countUp">
-      <label for="inputString">Enter a number between!</label>
-      <input id="inputString" type="number" class="form-control">
+      <label for="inputString">Enter a number up to 9</label>
+      <input id="inputString" type="number" max="9" min="1" class="form-control">
       <button type="submit" class="btn btn-primary" id="submit">Submit</button>
       <button type="submit" class="btn btn-primary" id="reset">Reset</button>
     </form>
-    <ul id="output">output goes here
-    </ul>
+    <div class="container">
+      <ul id="output"></ul>
+    </div>
   </div>
 </body>
 </html>

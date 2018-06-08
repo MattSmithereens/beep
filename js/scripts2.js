@@ -1,6 +1,6 @@
 function countDown(makeInt) {
   for (var i = makeInt; i >= 0; i -= 1) {
-    displayResults(i);
+    oneCheck(i);
 
   }
 }
@@ -9,7 +9,11 @@ function oneCheck(i) {
   var stringI = i.toString();
   var splitNumber = stringI.split("");
   var oneYes = splitNumber.includes("1");
+  var zeroYes = splitNumber.includes("0");
 
+  for (oneYes === "true") {
+    console.log("reached");
+  }
 
 
   //} else {
