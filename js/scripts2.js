@@ -1,10 +1,38 @@
 function countDown(makeInt) {
-  for(var i = makeInt; i > 0; i -= 1) {
-    console.log(i);
-    //displayResults(i);
+  for (var i = makeInt; i >= 0; i -= 1) {
+    displayResults(i);
 
   }
 }
+
+function oneCheck(i) {
+  var stringI = i.toString();
+  var splitNumber = stringI.split("");
+  var oneYes = splitNumber.includes("1");
+
+
+
+  //} else {
+
+  // } else if {
+  //   var makeInt = parseInt($("#inputString").val()); // brings in string value as integer
+  //   var divThree = makeInt%3 === 0 ;  // is int divisible by 3?
+  //}
+}
+
+
+
+
+
+function displayResults(i) {
+  $("#output").append("<li>" + i + "</li>");
+}
+
+//var splitNumber = split(stringI); // split string into characters to be searchable
+// var oneYes = splitNumber.includes("1"); // check for 1
+// var zeroYes = splitNumber.includes("0"); // check for 0
+
+
 
 
 // put at bottom. from count to project
@@ -27,9 +55,6 @@ $(document).ready(function() {
       // var divThree = makeInt%3 === 0 ;  // is int divisible by 3?
       // console log here for oneYes zeroYes and divThree all work
       // var numberSort(splitNumber); // spits number into top function
-
-
-
 
   });
 
