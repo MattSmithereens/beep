@@ -12,10 +12,10 @@ function numCheck(i) {
   //   #### These next 2 lines break the code in their current state/position ####
   //   var makeInt = parseInt(i).val();
   //   var divThree = makeInt%3 === 0 ;
-  if (oneYes === true) {
-    displayResults("BOOP");
-  } else if (zeroYes === true) {
+  if (zeroYes === true) {
     displayResults("BEEP");
+  } else if (oneYes === true) {
+  displayResults("BOOP");
   // unhide to display "sorry, Dave" if num%3===0
   // } else if (divThree === true) {
   //   displayResults("I'm sorry, Dave. I'm afraid I can't do that.");

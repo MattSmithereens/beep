@@ -18,6 +18,11 @@ construct a site that counts down to zero from an inputted number and makes 3 se
 | **Replace Numbers that contain a "1" with "BOOP"** | 2 | 2-BOOP-BEEP |
 | **Numbers divisible by 3 are replaced with a phrase**| 4 | 4-I'm sorry, Dave. I'm afraid I can't do that.-2-BOOP-BEEP
 
+### Known Bugs
+
+1. Independent project instructions were unclear.  I met them as best I understood I was supposed to
+2. Code currently does not account for or successfully replace multiples of 3 with the 2001 phrase.
+
 ## Setup/Contribution Requirements
 
 1. Clone the repo
