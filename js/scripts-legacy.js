@@ -15,6 +15,7 @@ function numberSort(oneYes, zeroYes, divThree) {
 
 $(document).ready(function() {
   $("#submit").click(function(e) {
+    location.reload();
     e.preventDefault();
       var inputNumber = $("#inputString").val(); //bring in number as string to check value
       var splitNumber = inputNumber.split(""); // split string into characters to be searchable
