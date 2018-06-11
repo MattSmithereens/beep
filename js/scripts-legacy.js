@@ -1,11 +1,18 @@
-function numberSort(oneYes, zeroYes, divThree) {
-  if ((numberCompare(countTo, countBy) === true) || (noZero(countTo, countBy) === true) || (noBlanks(countTo, countBy) === true) || (notNum(countTo, countBy) === true)) {
-    alert("try again");
-  } else {
-    for(var i = countBy; i <= countTo; i += countBy) {
-      displayResults(i);
-    }
+function countDown(makeInt) {
+  for (var i = makeInt; i >= 0; i -= 1) {
+    displayResults(i);
   }
+}
+
+function numberSort(divThree) {
+  // if (zeroYes === true) {
+  //   displayResults("BEEP");
+  // } else if (zeroYes === true) {
+  //   displayResults("BOOP");
+} if (divThree === true) {
+    displayResults("I'm sorry, Dave. I'm afraid I can't do that.");
+  } else {
+    alert("nope");
 }
 
 
@@ -15,7 +22,6 @@ function numberSort(oneYes, zeroYes, divThree) {
 
 $(document).ready(function() {
   $("#submit").click(function(e) {
-    location.reload();
     e.preventDefault();
       var inputNumber = $("#inputString").val(); //bring in number as string to check value
       var splitNumber = inputNumber.split(""); // split string into characters to be searchable
@@ -25,7 +31,9 @@ $(document).ready(function() {
       var divThree = makeInt%3 === 0 ;  // is int divisible by 3?
       // console log here for oneYes zeroYes and divThree all work
       // var numberSort(splitNumber); // spits number into top function
-      numberSort(oneYes, zeroYes, divThree);
+      numberSort(divThree);
+
+      // numberSort(oneYes, zeroYes, divThree);
 
 
 
