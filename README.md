@@ -14,9 +14,11 @@ construct a site that counts down to zero from an inputted number and makes 3 se
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Replace numbers that contain a "0" with "BEEP"** | 0 | 2-1-BEEP |
-| **Replace Numbers that contain a "1" with "BOOP"** | 2 | 2-BOOP-BEEP |
-| **Numbers divisible by 3 are replaced with a phrase**| 4 | 4-I'm sorry, Dave. I'm afraid I can't do that.-2-BOOP-BEEP
+| **Replace numbers that contain a "0" with "BEEP"** | 10 | BEEP |
+| **Replace Numbers that contain a "1" with "BOOP"** | 11 | BOOP |
+| **Numbers divisible by 3 are replaced with a phrase**| 9 | I'm sorry, Dave. I'm afraid I can't do that.|
+| **Other numbers activate a countdown**| 4 | 4, 3, 2, 1, 0 |
+
 
 ### Known Bugs
 
