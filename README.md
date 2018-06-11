@@ -6,7 +6,7 @@ Friday June 8th, 2018
 #### By Matt Smith
 
 ## Description
-construct a site that counts down to zero from an inputted number and makes 3 seperate changes in this order of importance:
+construct a site that counts down to zero from an inputted number unless one of these conditions is met:
 * replaces numbers containing the integer "0" with a "BEEP"
 * replaces numbers containing the integer "1" with a "BOOP"
 * replaces number divisible by 3 with a quote from 2001
