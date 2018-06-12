@@ -1,6 +1,6 @@
 function tooBig(makeInt) {
   if (makeInt > 30) {
-    displayResults("Be reasonable, Dave.  That number is too large");
+    displayResults("You're being unreasonable, Dave.  That number is too large");
     $("#inputString").val("");
   } else {
     countDown(makeInt);
