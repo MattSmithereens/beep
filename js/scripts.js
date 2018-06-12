@@ -1,8 +1,13 @@
 function countDown(makeInt) {
   for (var i = makeInt; i >= 0; i -= 1) {
     numCheck(i);
+    $("#inputString").val("");
   }
 }
+
+// function = nope(i) {
+//   alert("Choose a smaller number, please." + i + " is too large");
+// }
 
 function numCheck(i) {
   var divThree = i%3 === 0 ;
@@ -10,16 +15,12 @@ function numCheck(i) {
   var splitNumber = stringI.split("");
   var oneYes = splitNumber.includes("1");
   var zeroYes = splitNumber.includes("0");
-  if (i > 30) {
-    alert("Choose a smaller number, please");
-  } else if (divThree === true) {
+  if (divThree === true) {
     displayResults("I'm sorry, Dave. I'm afraid I can't do that.");
   } else if (zeroYes === true) {
     displayResults("BEEP");
   } else if (oneYes === true) {
     displayResults("BOOP");
-  // unhide to display "sorry, Dave" if num%3===0
-
   } else {
     displayResults(i);
   }
