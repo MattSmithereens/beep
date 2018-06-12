@@ -6,10 +6,17 @@ Friday June 8th, 2018
 #### By Matt Smith
 
 ## Description
+<<<<<<< HEAD
 construct a site that counts down to zero from an inputted number less than 30 unless one of these conditions is met in this order of importance:
 * replaces number divisible by 3 with a quote from 2001
 * replaces numbers containing the integer "1" with a "BOOP"
 * replaces numbers containing the integer "0" with a "BEEP"
+=======
+construct a site that counts down to zero from an inputted number less than 30 unless one of these conditions is met:
+* replaces numbers containing the integer "0" with a "BEEP"
+* replaces numbers containing the integer "1" with a "BOOP"
+* replaces number divisible by 3 (including zero, since it technically doesn't divide with a remainder) with a quote from 2001
+>>>>>>> gh-pages
 * numbers larger than 30 will display an error message since such outputted countdowns can become unwieldy very quickly
 
 ### Specs
