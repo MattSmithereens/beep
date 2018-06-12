@@ -20,12 +20,12 @@ function numCheck(i) {
   var splitNumber = stringI.split("");
   var oneYes = splitNumber.includes("1");
   var zeroYes = splitNumber.includes("0");
-  if (divThree === true) {
+  if (divThree === true && i > 1) {
     displayResults("I'm sorry, Dave. I'm afraid I can't do that.");
-  } else if (zeroYes === true) {
-    displayResults("BEEP");
   } else if (oneYes === true) {
     displayResults("BOOP");
+  } else if (zeroYes === true) {
+    displayResults("BEEP");  
   } else {
     displayResults(i);
   }
