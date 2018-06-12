@@ -1,13 +1,18 @@
+function tooBig(makeInt) {
+  if (makeInt > 30) {
+    displayResults("Be reasonable, Dave.  That number is too large");
+    $("#inputString").val("");
+  } else {
+    countDown(makeInt);
+  }
+}
+
 function countDown(makeInt) {
   for (var i = makeInt; i >= 0; i -= 1) {
     numCheck(i);
     $("#inputString").val("");
   }
 }
-
-// function = nope(i) {
-//   alert("Choose a smaller number, please." + i + " is too large");
-// }
 
 function numCheck(i) {
   var divThree = i%3 === 0 ;
@@ -35,7 +40,7 @@ $(document).ready(function() {
     e.preventDefault();
     $("#output").text("");
       var makeInt = parseInt($("#inputString").val());
-      countDown(makeInt);
+      tooBig(makeInt);
   });
 
   $("#reset").click(function(e) {
