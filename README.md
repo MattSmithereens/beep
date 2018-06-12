@@ -6,24 +6,24 @@ Friday June 8th, 2018
 #### By Matt Smith
 
 ## Description
-construct a site that counts down to zero from an inputted number unless one of these conditions is met:
+construct a site that counts down to zero from an inputted number less than 30 unless one of these conditions is met:
 * replaces numbers containing the integer "0" with a "BEEP"
 * replaces numbers containing the integer "1" with a "BOOP"
-* replaces number divisible by 3 with a quote from 2001
+* replaces number divisible by 3 (including zero, since it technically doesn't divide with a remainder) with a quote from 2001
+* numbers larger than 30 will display an error message since such outputted countdowns can become unwieldy very quickly
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Replace numbers that contain a "0" with "BEEP"** | 10 | BEEP |
-| **Replace Numbers that contain a "1" with "BOOP"** | 11 | BOOP |
-| **Numbers divisible by 3 are replaced with a phrase**| 9 | I'm sorry, Dave. I'm afraid I can't do that.|
-| **Other numbers activate a countdown**| 4 | 4, 3, 2, 1, 0 |
+| **Replace numbers that contain a "0" with "BEEP"** | 20 | BEEP...19 [...] |
+| **Replace Numbers that contain a "1" with "BOOP"** | 11 | BOOP...BEEP[...] |
+| **Numbers divisible by 3 are replaced with a phrase**| 9 | I'm sorry, Dave. I'm afraid I can't do that...8[...]|
+| **Numbers larger than 30 are replaced with a phrase and do not count down**| 10e4 | You're being unreasonable, Dave.  That number is too large|
 
 
 ### Known Bugs
 
-1. Independent project instructions were unclear.  I met them as best I understood I was supposed to
-2. Code currently does not account for or successfully replace multiples of 3 with the 2001 phrase.
+1. none at this time.  Please contact MattSmithereens@gmail.com with any encountered bugs
 
 ## Setup/Contribution Requirements
 
