@@ -10,9 +10,6 @@ function numCheck(i) {
   var splitNumber = stringI.split("");
   var oneYes = splitNumber.includes("1");
   var zeroYes = splitNumber.includes("0");
-  //   #### These next 2 lines break the code in their current state/position ####
-  //   var makeInt = parseInt(i).val();
-  //   var divThree = makeInt%3 === 0 ;
   if (i > 30) {
     alert("Choose a smaller number, please");
   } else if (divThree === true) {
