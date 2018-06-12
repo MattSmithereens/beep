@@ -5,6 +5,7 @@ function countDown(makeInt) {
 }
 
 function numCheck(i) {
+  var divThree = i%3 === 0 ;
   var stringI = i.toString();
   var splitNumber = stringI.split("");
   var oneYes = splitNumber.includes("1");
@@ -12,13 +13,16 @@ function numCheck(i) {
   //   #### These next 2 lines break the code in their current state/position ####
   //   var makeInt = parseInt(i).val();
   //   var divThree = makeInt%3 === 0 ;
-  if (zeroYes === true) {
+  if (i > 30) {
+    alert("Choose a smaller number, please");
+  } else if (divThree === true) {
+    displayResults("I'm sorry, Dave. I'm afraid I can't do that.");
+  } else if (zeroYes === true) {
     displayResults("BEEP");
   } else if (oneYes === true) {
-  displayResults("BOOP");
+    displayResults("BOOP");
   // unhide to display "sorry, Dave" if num%3===0
-  // } else if (divThree === true) {
-  //   displayResults("I'm sorry, Dave. I'm afraid I can't do that.");
+
   } else {
     displayResults(i);
   }
@@ -31,6 +35,7 @@ function displayResults(i) {
 $(document).ready(function() {
   $("#submit").click(function(e) {
     e.preventDefault();
+    $("#output").text("");
       var makeInt = parseInt($("#inputString").val());
       countDown(makeInt);
   });
